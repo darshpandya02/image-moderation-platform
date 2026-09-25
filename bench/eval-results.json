@@ -1,0 +1,189 @@
+{
+  "measuredAt": "2026-09-25T03:12:41.069Z",
+  "machine": "darwin-arm64, node v26.5.0, tfjs wasm backend",
+  "policy": "default",
+  "all": {
+    "n": 500,
+    "approved": 485,
+    "needs_review": 10,
+    "rejected": 5,
+    "approvedRate": 0.97,
+    "falseRejectRate": 0.01,
+    "flaggedRate": 0.03,
+    "argmaxSafe": 0.98,
+    "topCategory": {
+      "drawing": 8,
+      "hentai": 0,
+      "neutral": 482,
+      "porn": 10,
+      "sexy": 0
+    }
+  },
+  "picsum": {
+    "n": 200,
+    "approved": 188,
+    "needs_review": 7,
+    "rejected": 5,
+    "approvedRate": 0.94,
+    "falseRejectRate": 0.025,
+    "flaggedRate": 0.06,
+    "argmaxSafe": 0.955,
+    "topCategory": {
+      "drawing": 8,
+      "hentai": 0,
+      "neutral": 183,
+      "porn": 9,
+      "sexy": 0
+    }
+  },
+  "imagenette": {
+    "n": 300,
+    "approved": 297,
+    "needs_review": 3,
+    "rejected": 0,
+    "approvedRate": 0.99,
+    "falseRejectRate": 0,
+    "flaggedRate": 0.01,
+    "argmaxSafe": 0.9967,
+    "topCategory": {
+      "drawing": 0,
+      "hentai": 0,
+      "neutral": 299,
+      "porn": 1,
+      "sexy": 0
+    }
+  },
+  "generalLabelAccuracy": {
+    "n": 300,
+    "top1": 0.6967,
+    "top3": 0.8433
+  },
+  "latencyMs": {
+    "inferenceP50": 32,
+    "inferenceP95": 33,
+    "decodeAndInferP50": 33,
+    "decodeAndInferP95": 37
+  },
+  "flagged": [
+    {
+      "file": "picsum/4.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.670>=review@0.35"
+      ],
+      "label": "notebook, notebook computer"
+    },
+    {
+      "file": "picsum/5.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.433>=review@0.35"
+      ],
+      "label": "notebook, notebook computer"
+    },
+    {
+      "file": "picsum/21.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.361>=review@0.35"
+      ],
+      "label": "rocking chair, rocker"
+    },
+    {
+      "file": "picsum/23.jpg",
+      "decision": "rejected",
+      "reasons": [
+        "porn:0.907>=reject@0.8"
+      ],
+      "label": "spatula"
+    },
+    {
+      "file": "picsum/31.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.541>=review@0.35"
+      ],
+      "label": "remote control, remote"
+    },
+    {
+      "file": "picsum/40.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.401>=review@0.35"
+      ],
+      "label": "Egyptian cat"
+    },
+    {
+      "file": "picsum/73.jpg",
+      "decision": "rejected",
+      "reasons": [
+        "porn:0.840>=reject@0.8"
+      ],
+      "label": "baseball"
+    },
+    {
+      "file": "picsum/113.jpg",
+      "decision": "rejected",
+      "reasons": [
+        "porn:0.851>=reject@0.8"
+      ],
+      "label": "caldron, cauldron"
+    },
+    {
+      "file": "picsum/159.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.483>=review@0.35"
+      ],
+      "label": "leaf beetle, chrysomelid"
+    },
+    {
+      "file": "picsum/160.jpg",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.609>=review@0.35"
+      ],
+      "label": "remote control, remote"
+    },
+    {
+      "file": "picsum/185.jpg",
+      "decision": "rejected",
+      "reasons": [
+        "porn:0.880>=reject@0.8"
+      ],
+      "label": "seashore, coast, seacoast, sea-coast"
+    },
+    {
+      "file": "picsum/186.jpg",
+      "decision": "rejected",
+      "reasons": [
+        "porn:0.833>=reject@0.8"
+      ],
+      "label": "mosquito net"
+    },
+    {
+      "file": "n02102040/ILSVRC2012_val_00017370.JPEG",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.360>=review@0.35"
+      ],
+      "label": "English springer, English springer spaniel"
+    },
+    {
+      "file": "n03028079/n03028079_10141.JPEG",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.444>=review@0.35"
+      ],
+      "label": "volcano"
+    },
+    {
+      "file": "n03445777/n03445777_10030.JPEG",
+      "decision": "needs_review",
+      "reasons": [
+        "porn:0.745>=review@0.35"
+      ],
+      "label": "maraca"
+    }
+  ]
+}
