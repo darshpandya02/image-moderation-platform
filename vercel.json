@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "src/app/api/queues/moderation/route.ts": {
+      "memory": 2048,
+      "experimentalTriggers": [
+        { "type": "queue/v2beta", "topic": "image-moderation", "retryAfterSeconds": 10 }
+      ]
+    }
+  },
+  "crons": [{ "path": "/api/cron/sweep", "schedule": "17 4 * * *" }]
+}
