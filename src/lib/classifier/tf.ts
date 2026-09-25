@@ -51,8 +51,6 @@ async function loadImagenet(): Promise<mobilenet.MobileNet> {
     weightSpecs: manifest.weightsManifest.flatMap((g: { weights: tf.io.WeightsManifestEntry[] }) => g.weights),
     weightData: all.buffer.slice(all.byteOffset, all.byteOffset + all.byteLength),
     format: manifest.format,
-    generatedBy: manifest.generatedBy,
-    convertedBy: manifest.convertedBy,
   });
   return mobilenet.load({ version: 2, alpha: 1.0, modelUrl: handler, inputRange: [0, 1] });
 }
